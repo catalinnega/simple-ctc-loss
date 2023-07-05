@@ -5,7 +5,7 @@ import torch.nn.functional as F
 import numpy as np
 import pandas as pd
 import os
-import q4
+import ctc
 
 def load_files(
             emissions_path: str,
@@ -29,7 +29,7 @@ def load_files(
     return emissions, transcript, labels
 
 def get_absolute_resources_file_path(relative_file_path: str):
-    return os.path.join(os.path.dirname(os.path.abspath(q4.__file__)), relative_file_path)
+    return os.path.join(os.path.dirname(os.path.abspath(ctc.__file__)), relative_file_path)
 
 def read_txt_file_lines(text_fpath: str) -> List[str]:
     lines = []

@@ -2,7 +2,7 @@ from typing import List, Tuple, Union
 import numpy as np
 import torch
 from torch.autograd import Function
-from q4.ctc_loss_processor import CTCLossProcessor
+from ctc.ctc_loss_processor import CTCLossProcessor
 
 class CTCLoss(Function):
     @staticmethod
