@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(
-    name="simple_ctc",
+    name="simple-ctc-loss",
     version="0.1",
     packages=['ctc'],
     install_requires=[
@@ -20,7 +20,7 @@ setup(
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
     license="",
-    url="https://github.com/catalinnega/simple_ctc",
+    url="https://github.com/catalinnega/simple-ctc-loss",
     classifiers=[
     ],
 )
