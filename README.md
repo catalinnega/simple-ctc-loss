@@ -45,5 +45,5 @@ Viterbi (argmax) decoding labels:
 - "Connectionist Temporal Classification: Labelling Unsegmented Sequence Data with Recurrent Neural Networks", Graves et al.: https://dl.acm.org/doi/abs/10.1145/1143844.1143891
 - "Sequence Modeling With CTC", Hannun et al.: https://distill.pub/2017/ctc/
 - CTC implementations:
-    https://github.com/amaas/stanford-ctc
-    https://github.com/vadimkantorov/ctc
+    - https://github.com/amaas/stanford-ctc
+    - https://github.com/vadimkantorov/ctc
