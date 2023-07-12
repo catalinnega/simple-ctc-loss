@@ -10,7 +10,7 @@ class CTCLoss(Function):
         forward_matrix, backward_matrix, forward_likelihood, _ = compute_viterbi_runs(emissions_matrix, transcript_IDs)
         forward_matrix, backward_matrix = torch.tensor(forward_matrix, dtype=torch.float16), torch.tensor(backward_matrix, dtype=torch.float16)
         ctx.save_for_backward(emissions_matrix, forward_matrix, backward_matrix, transcript_IDs)
-        return forward_likelihood
+        return -forward_likelihood
 
     @staticmethod
     def backward(ctx, grad_output):
