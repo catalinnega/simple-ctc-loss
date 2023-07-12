@@ -35,11 +35,11 @@ Viterbi (argmax) decoding labels:
 ### Output results:
 | Case name                                  |   Forward Viterbi negative loglikelihood |   Backwrd Viterbi negative loglikelihood |   Torch CTC loss |   Implemented CTC Loss |   Gradient matrix norm |   Joint probability norm |   Emissions Gradient norm |
 |:-------------------------------------------|-----------------------------------------:|-----------------------------------------:|-----------------:|-----------------------:|-----------------------:|-------------------------:|--------------------------:|
-| Half of IDs are wrong                      |                               -1343.07   |                               -1132.36   |        -1006.6    |             -1343.07   |              nan       |              1.41227     |                 nan       |
-| No blank separators                        |                                 -44.3633 |                                 -44.3633 |          -44.3633 |               -44.3633 |                2.54267 |              1.40262e+07 |                   1.86154 |
-| Transcript IDs                             |                                  22.9122 |                                  22.9123 |         22.9123 |                22.9122 |                1.52612 |              5.66188     |                   1.5262  |
-| Transcript IDs with max probabilities == 1 |                                 110.704  |                                 110.704  |        110.704  |               110.704  |               36.2394  |              0.573886    |                  36.2393  |
-| All IDs are the same                       |                                 nan      |                                 nan      |         -986.052  |               nan      |              nan       |            nan           |                 nan       |
+| Half of IDs are wrong                      |                               -1343.07   |                               -1132.36   |        1006.6    |              1343.07   |              nan       |              1.41227     |                 nan       |
+| No blank separators                        |                                 -44.3633 |                                 -44.3633 |          44.3633 |                44.3633 |                2.54267 |              1.40262e+07 |                   1.86154 |
+| Transcript IDs                             |                                  22.9122 |                                  22.9123 |         -22.9123 |               -22.9122 |                1.52612 |              5.66188     |                   1.5262  |
+| Transcript IDs with max probabilities == 1 |                                 110.704  |                                 110.704  |        -110.704  |              -110.704  |               36.2394  |              0.573886    |                  36.2393  |
+| All IDs are the same                       |                                 nan      |                                 nan      |         986.052  |               nan      |              nan       |            nan           |                 nan       |
 
 ## References:
 - "Connectionist Temporal Classification: Labelling Unsegmented Sequence Data with Recurrent Neural Networks", Graves et al.: https://dl.acm.org/doi/abs/10.1145/1143844.1143891
